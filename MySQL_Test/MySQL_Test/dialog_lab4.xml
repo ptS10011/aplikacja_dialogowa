@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-US">
+
+<var name="liczbaPasazerowNum" expr="1"/>
+<var name="liczbaPasazerowTmp" expr="1"/>
+
+  <nomatch>
+    I can't understand you. Could you repeat?
+  </nomatch>
+
+  <form id="RezerwacjaOd">
+    <field name="wybraneLotniskoOd">
+      <prompt>Choose source city. Available choices are Warsaw and Cracow.</prompt>
+      <grammar src="Grammar/Source.xml" />
+    </field>
+  </form>
+
+
+<form id="RezerwacjaDo">
+
+  <field name="wybraneLotniskoDo">
+    <prompt>Choose a city to which you want to arrive. Available choices are London and Bristol.</prompt>
+    <grammar src="Grammar/Destination.xml" />
+  
+  </field>
+
+</form>
+
+
+<form id="DzienLotu">
+
+  <field name="wyborDniaLotu">
+    <prompt>Choose a day from Sunday to Saturday.</prompt>
+    <grammar src="Grammar/Date.xml" />
+  
+  </field>
+
+</form>
+
+<form id="Koniec">
+  <block>
+    <prompt>Thank you for choosing our services.</prompt>
+  </block>
+</form>
+
+</vxml>

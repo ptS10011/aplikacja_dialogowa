@@ -11,3 +11,16 @@ C:\Users\piter\source\repos\MySQL_Test\MySQL_Test\bin\Debug\System.Data.dll
 C:\Users\piter\source\repos\MySQL_Test\MySQL_Test\bin\Debug\MySql.Data.xml
 C:\Users\piter\source\repos\MySQL_Test\MySQL_Test\obj\Debug\MySQL_Test.exe
 C:\Users\piter\source\repos\MySQL_Test\MySQL_Test\obj\Debug\MySQL_Test.pdb
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\obj\Debug\MySQL_Test.csprojResolveAssemblyReference.cache
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\obj\Debug\MySQL_Test.Form1.resources
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\obj\Debug\MySQL_Test.Properties.Resources.resources
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\obj\Debug\MySQL_Test.csproj.GenerateResource.Cache
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\obj\Debug\MySQL_Test.csproj.CoreCompileInputs.cache
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\obj\Debug\MySQL_Test.exe
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\obj\Debug\MySQL_Test.pdb
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\bin\Debug\MySQL_Test.exe.config
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\bin\Debug\MySQL_Test.exe
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\bin\Debug\MySQL_Test.pdb
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\bin\Debug\Microsoft.Speech.dll
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\bin\Debug\System.Data.dll
+C:\Users\Zoufland\Source\Repos\aplikacja_dialogowa\MySQL_Test\MySQL_Test\bin\Debug\MySql.Data.xml

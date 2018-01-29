@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vxml version = "2.1" xml:lang="en-US">
+    <grammar>
+      <rule>
+        <one-of>
+          <item> Sunday </item>
+          <item> Monday </item>
+          <item> Tuesday </item>
+          <item> Wednesday </item>
+          <item> Thursday </item>
+          <item> Friday </item>
+          <item> Saturday </item>
+        </one-of>
+      </rule>
+    </grammar>
+
+</vxml>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vxml version = "2.1" xml:lang="en-US">
+
+  <grammar>
+    <rule>
+      <one-of>
+        <item> London </item>
+        <item> Bristol </item>
+      </one-of>
+    </rule>
+  </grammar>
+
+</vxml>
