@@ -28,8 +28,7 @@ namespace MySQL_Test
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (appThread != null && !appThread.IsAlive)
-                appThread.Start();
+            
         }
 
         delegate void SetTextCallback(string text);
@@ -64,6 +63,8 @@ namespace MySQL_Test
         {
             //var dbCon = new DBConnect();
             //dbCon.InsertLot("warszawa", "londyn", "styczen");
+            if (appThread != null && !appThread.IsAlive)
+                appThread.Start();
         }
 
         private void label1_Click(object sender, EventArgs e)

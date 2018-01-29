@@ -23,11 +23,13 @@ namespace MySQL_Test
             this.recognizer = recognizer;
             this.synthesizer = synthesizer;
             this.view = widok;
+            //synthesizer.Say("Test");
             conn = new DBConnect();
         }
 
         public void Run()
         {
+            //synthesizer.Say("Test");
             lot = new List<String>();
             //synthesizer.Say("Test");
             foreach (Form form in vxml.Forms)
@@ -82,12 +84,16 @@ namespace MySQL_Test
 
         public void EndDialog(List<String> lot)
         {
-            //foreach (i in lot)
-           // {
-                //conn.InsertLot(lot.)
-                synthesizer.Say("Thank you for using our system");
-                view.SetView("Thank you for using our system.", null);
-           // }
+            var result = lot.ToArray();
+
+            foreach (String i in result)
+            {
+                synthesizer.Say("Result 1: " + i);
+            }
+
+            //conn.InsertLot(result[0], result[1], result[2]);
+            synthesizer.Say("Thank you for using our system");
+            view.SetView("Thank you for using our system.", null);
             /*else
             {
                 synthesizer.Say("There were errors please call again");

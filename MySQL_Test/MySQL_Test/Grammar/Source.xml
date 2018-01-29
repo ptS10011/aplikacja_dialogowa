@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<vxml version = "2.1" xml:lang="en-US">
-      <grammar>
-        <rule>
+<grammar version="1.0" xml:lang="en-US" mode="voice" root="Source"
+	xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+        <rule id="Source">
           <one-of>
             <item> Warsaw </item>
             <item> Cracow </item>
           </one-of>
         </rule>
       </grammar>
-</vxml>

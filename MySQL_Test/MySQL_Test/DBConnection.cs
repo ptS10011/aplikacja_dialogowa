@@ -29,7 +29,7 @@ using System.Windows.Forms;
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
             connection = new MySqlConnection(connectionString);
-            MessageBox.Show("Polaczono z baza");
+            //MessageBox.Show("Polaczono z baza");
         }
 
         //open connection to database
