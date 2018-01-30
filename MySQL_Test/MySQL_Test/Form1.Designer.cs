@@ -34,7 +34,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(95, 201);
+            this.button1.Location = new System.Drawing.Point(241, 355);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -45,18 +45,19 @@
             // promptLabel
             // 
             this.promptLabel.AutoSize = true;
-            this.promptLabel.Location = new System.Drawing.Point(95, 26);
+            this.promptLabel.Location = new System.Drawing.Point(12, 9);
             this.promptLabel.Name = "promptLabel";
-            this.promptLabel.Size = new System.Drawing.Size(36, 13);
+            this.promptLabel.Size = new System.Drawing.Size(40, 13);
             this.promptLabel.TabIndex = 1;
-            this.promptLabel.Text = "Czesc";
+            this.promptLabel.Text = "Prompt";
+            this.promptLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.promptLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(544, 390);
             this.Controls.Add(this.promptLabel);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
