@@ -21,7 +21,7 @@ namespace MySQL_Test
             Application.SetCompatibleTextRenderingDefault(false);
 
             Vxml data = null;
-            using (XmlReader reader = XmlReader.Create("../../dialog_lab4.xml"))
+            using (XmlReader reader = XmlReader.Create("../../dialog_lab4.xml")) //uruchomienie parsera i odczytu XML
             {
                 XmlSerializer xml = new XmlSerializer(typeof(Vxml));
                 data = (Vxml)xml.Deserialize(reader);

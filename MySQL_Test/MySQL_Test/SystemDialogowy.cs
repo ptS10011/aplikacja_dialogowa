@@ -10,12 +10,12 @@ namespace MySQL_Test
 {
     class SystemDialogowy
     {
-        public DBConnect conn;
-        public Vxml vxml;
-        public Rozpoznawanie recognizer;
+        public DBConnect conn; //połączenie z bazą
+        public Vxml vxml; //obiekt VXML, w którym znajduje się logika deserializera dla parsera
+        public Rozpoznawanie recognizer; //obiekt rozpoznawania
         public Synteza synthesizer;
-        private Form1 view;
-        public List<String> lot;
+        private Form1 view; //zapisanie Form jako widoku, który następnie aktualizowany jest metodą SetView
+        public List<String> lot; //lista, w której zapisywane są szczegóły lotu
 
         public SystemDialogowy(Vxml vxml, Rozpoznawanie recognizer, Synteza synthesizer, Form1 widok)
         {
@@ -23,15 +23,12 @@ namespace MySQL_Test
             this.recognizer = recognizer;
             this.synthesizer = synthesizer;
             this.view = widok;
-            //synthesizer.Say("Test");
             conn = new DBConnect();
         }
 
         public void Run()
         {
-            //synthesizer.Say("Test");
             lot = new List<String>();
-            //synthesizer.Say("Test");
             foreach (Form form in vxml.Forms)
             {
                 if (form.Grammar != null)
@@ -46,7 +43,6 @@ namespace MySQL_Test
                         if (!string.IsNullOrWhiteSpace(result))
                         {
                             lot.Add(result);
-                            //appointment.SetAttributes(result, "");
                         }
                         done = true;
                     }
@@ -75,7 +71,6 @@ namespace MySQL_Test
                                 synthesizer.Say(vxml.NoMatch);
                             }
                         }
-                        //synthesizer.Say(field.Filled + appointment.GetAttribute(field.Name));
                     }
 
                 }
@@ -86,19 +81,9 @@ namespace MySQL_Test
         {
             var result = lot.ToArray();
 
-            foreach (String i in result)
-            {
-                synthesizer.Say("Result 1: " + i);
-            }
-
-            //conn.InsertLot(result[0], result[1], result[2]);
+            conn.InsertLot(result[0], result[1], result[2]);
             synthesizer.Say("Thank you for using our system");
             view.SetView("Thank you for using our system.", null);
-            /*else
-            {
-                synthesizer.Say("There were errors please call again");
-                view.SetView("There were errors please call again.", null);
-            }*/
         }
     }
 }
